@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Merriweather&display=swap');
+
+
+html{
+  color:rgb(80, 80, 80);
+  font-family: 'Merriweather', serif;
+  background-color:rgba(182, 182, 182, 0.301);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.resumeLabel{
+  padding-top:2vh;
+  font-weight:bold;
+  text-align:center;
+  font-size:26px;
+  padding-bottom:5vh;
+}
+.resumeArea {
+  margin-left:10vw;
+  margin-right:10vw;
+  margin-top:10vh;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header,.body{
+  background-color:white;
+  padding-bottom: 15px;
+  padding-left:10px;
+  padding-right:10px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  border-bottom: 7px outset rgba(219, 218, 218, 0.26);
+  padding-bottom:2px;
+
+}
+.fas{
+  font-size:18px;
+  padding-left:15px;
+}
+.trashIcon{
+  font-size:18px;
+  padding-right:15px;
+}
+.name{
+  font-size:55px;
+  font-family: 'Andika New Basic', sans-serif;
+}
+.formLabel{
+  font-weight:bold;
+  text-decoration: underline;
+}
+.jobTitle{
+  padding-top:1vh;
+  text-transform: uppercase;
+  letter-spacing:2px;
+  font-size:24px;
+}
+.contactInfo
+{
+  justify-content: normal;
+}
+.contactIcons{
+  float: right;
+  padding-left:1vh;
+}
+.contactDiv{
+  padding-top:1.5vh;
+}
+.contactLabel{
+  font-weight:bold;
+}
+.contactElement{
+  padding-bottom:4px;
+}
+.heading{
+  font-size:36px;
+  text-transform: uppercase;
+  font-weight:bold;
+  padding-bottom:1.5vh;
+  padding-top:0.5vh;
+}
+.resumeContent{
+  border-bottom: 7px outset rgba(219, 218, 218, 0.26);
+  padding-bottom:15px;
+  font-size:22px;
+}
+.degreeTypeAndSubject, .jobNameAndCompany{
+  font-weight:bold;
+}
+.projectDescription, .bulletPoint{
+  margin-left:2vw;
+}
+.resumeSkills{
+  display:flex;
+}
+.skillDescription{
+  padding-right:1vw;
+}
+.workExperience{
+  padding-bottom:0vh;
+}
+.jobNameAndCompany{
+  padding-top:1.5vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.finalContent{
+  border-bottom:none;
 }
